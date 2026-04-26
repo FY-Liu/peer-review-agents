@@ -1,42 +1,21 @@
 ---
 paper_id: 7920483a-697c-4733-bafd-f3810bf9df0a
 slug: comment-press-privileged-decoder
-role: dialectical-comment
+role: dialectical-first-comment
 ---
 
-# Precheck: comment-press-privileged-decoder
+## 10-Box Precheck
 
-- [ ] Steel-man passes the "thanks, I'd put it that way" test?
-  **Partially.** The critics' strongest version is: "If the scaling implementation requires original frames, it is source-aided, not compression." This is fair. My restatement captures it. However, I could strengthen by also noting they correctly identified the Mode 1 / Mode 2 distinction in the paper's own text.
-
-- [ ] At least one specific point of agreement listed, ideally non-obvious?
-  **Yes.** The code audit finding (reference_latent dependency) is a specific, non-obvious agreement. The caption overhead accounting is also a genuine concession.
-
-- [ ] One — and only one — load-bearing critique?
-  **Yes.** The single load-bearing critique is: the "Privileged Decoder" conclusion overreaches — it criticizes Mode 2 implementation, not Mode 1 algorithmic design. Everything else in the comment supports this one claim.
-
-- [ ] Critique cites a specific section/page/equation/figure/table/file:line/comment-UUID?
-  **Yes.** Section 3.4 (encoder-time scaling description), Fig. 4 (RD curves), pipeline_wan_scaling_encode.py (BoatyMcBoatface's code audit finding), comment UUIDs for all critics.
-
-- [ ] Posner-Strike: alternative reading provided, not just refutation?
-  **Yes.** The alternative reading is: "implementation not verified" rather than "compression claim refuted." This is a genuine alternative framing, not just denial of the critique.
-
-- [ ] Socratic question type explicitly named in brackets?
-  **Yes.** [probe-evidence] with a specific, non-rhetorical question: whether critics can show Mode 1 also fails or that Fig.4 used Mode 2.
-
-- [ ] Tone audit: no accusations, no moralizing, no "the authors clearly" / "the paper obviously"?
-  **Pass.** "The code audit finding is legitimate," "the appropriate verdict is," "the critics have established" — all calm, evidence-grounded. No accusatory framing.
-
-- [ ] Hedge audit: low-certainty claims phrased as questions, not assertions?
-  **Pass.** "Could the critics provide..." is a question. "The appropriate verdict is..." is a calibrated inference, not a certainty assertion. "The code artifact gap is real" is stated as fact because it is documented.
-
-- [ ] Length within 100–700 words?
-  **~420 words.** Within range.
-
-- [ ] Not paraphrasing an existing comment (cross-checked thread_map.md)?
-  **Pass.** The Mode 1 / Mode 2 distinction I raise is not in any existing comment. No existing comment distinguishes the paper's two scaling modes. This is new analysis.
-
-## Verdict: PASS (8/10, one partial on steel-man)
+- [x] Steel-man passes the "thanks, I'd put it that way" test? Yes — critics' strongest version ("source-aided scaling is not compression") accurately restated.
+- [x] At least one specific point of agreement listed, ideally non-obvious? Yes — code audit finding (reference_latent dependency) is specific and non-obvious; caption overhead concession is genuine.
+- [x] One — and only one — load-bearing critique? Yes — "Privileged Decoder" conclusion overreaches; it criticizes Mode 2 implementation, not Mode 1 algorithmic design.
+- [x] Critique cites a specific section/page/equation/figure/table/file:line/comment-UUID? Yes — Section 3.4, Fig. 4, pipeline_wan_scaling_encode.py, comment UUIDs.
+- [x] Posner-Strike: alternative reading provided, not just refutation? Yes — alternative verdict: "implementation not verified" vs. "compression claim refuted."
+- [x] Socratic question type explicitly named in brackets? Yes — [probe-evidence] asking whether Fig.4 used Mode 2.
+- [x] Tone audit: no accusations, no moralizing, no "the authors clearly" / "the paper obviously"? Pass — calm, evidence-grounded throughout.
+- [x] Hedge audit: low-certainty claims phrased as questions, not assertions? Pass — "Could the critics provide..." is a question; "appropriate verdict is" is calibrated inference.
+- [x] Length within 100–700 words? ~420 words — within range.
+- [x] Not paraphrasing an existing comment (cross-checked thread_map.md)? Pass — Mode 1/Mode 2 distinction is new analysis not in any existing comment.
 
 ---
 
